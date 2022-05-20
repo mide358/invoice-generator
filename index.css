@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.invoice-heading {
+  background-color: #3a69d2;
+  height: 190px;
+  color: #ffffff;
+  text-align: center;
+  font-size: larger;
+  padding-top: 50px;
+  align-items: center;
+}
+
+h1,
+h5 {
+  margin: 0;
+}
+.invoice-wrapper {
+  background: #1f2937;
+}
+
+.task-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.invoice-details {
+  padding: 50px 30px;
+}
+
+.task-btn button {
+  color: #4a4e74;
+  background: #d1d4f4;
+  border: 2px solid #ffffff;
+  border-radius: 7px;
+  padding: 9px 13px;
+  margin-left: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.task-details {
+  margin: 20px;
+}
+
+.task-title {
+  color: #f5f5f5;
+  display: flex;
+
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.task-list {
+  padding-left: 0;
+  min-height: 100px;
+}
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  color: #f5f5f5;
+  list-style-type: none;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.task-list #amount {
+  float: right;
+}
+
+#remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #d5d4d8;
+  font-size: x-small;
+}
+
+.task-notes {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.notes {
+  color: #d5d4d8;
+}
+.total {
+  color: #f5f5f5;
+}
+#total-amount {
+  float: right;
+  margin-top: 5px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+#send-btn {
+  display: flex;
+  justify-content: center;
+  background: #3a69d2;
+  width: 80%;
+  padding: 9px 50px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 16px;
+  margin: auto;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 7px;
+  cursor: pointer;
+}
+#warning {
+  display: none;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(197, 20, 35);
+  background-color: #ffffff;
+  width: 200px;
+  margin: auto;
+}
+
+@media screen and (max-width: 450px) {
+  .task-btn button {
+    padding: 7px 10px;
+    border: 1px solid #ffffff;
+    font-weight: 200;
+  }
+
+  #accept {
+    font-size: 13px;
+  }
+  .task-notes h5 {
+    font-size: 14px;
+  }
+  #total-amount {
+    font-size: 24px;
+  }
+  #send-btn {
+    font-weight: 600;
+
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>INVOICE GENERATOR</title>
+  </head>
+  <body>
+    <div class="invoice-heading">
+      <h1>Invoice Creator</h1>
+      <p>Thanks for choosing Goodcorp, LLC!</p>
+      <p id="warning"></p>
+    </div>
+
+    <div class="invoice-wrapper">
+      <div class="invoice-details">
+        <div class="task-btn" id="task-button">
+          <!-- <button id="wash" value="{task: 'Wash car',price: 10,},">
+            Wash Car: $10
+          </button>
+          <button id="mow">Mow Lawn: $20</button>
+          <button id="shop">Grocery: $15</button> -->
+        </div>
+        <div class="task-details">
+          <div class="task-title">
+            <h5>TASK</h5>
+            <h5>TOTAL</h5>
+          </div>
+          <ul class="task-list">
+            <!-- <li>
+              <span>Wash car <button id="remove">remove</button> </span>
+              <span id="amount">$10</span>
+            </li>
+            <li>
+              <span>Wash car <button id="remove">remove</button> </span>
+              <span id="amount">$10</span>
+            </li>
+            <li>
+              <span>Wash car <button id="remove">remove</button> </span>
+              <span id="amount">$10</span>
+            </li> -->
+          </ul>
+        </div>
+        <hr />
+        <div class="task-notes">
+          <div class="notes">
+            <h5>NOTES</h5>
+            <p id="accept">We accept cash, credit card, or PayPal</p>
+          </div>
+          <div class="total">
+            <h5>TOTAL AMOUNT</h5>
+            <p id="total-amount">$0</p>
+          </div>
+        </div>
+
+        <button id="send-btn">🖂 Send invoice</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
